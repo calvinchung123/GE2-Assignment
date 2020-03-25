@@ -27,4 +27,4 @@ cap eg.100 **(this value can be changed by the user)** . Units will be worth a c
 towards cap), the user selects the units for the battle and commences the battle when the cap is full.
 
 # Steering Behaviours
-
+For this assgigment I will be using all of the steering behaviours covered in class. A new steering behaviour i wihs to implement is a moral behaviour. When a team of units lose their leader/are under heavy fire from the enemy, they begin to lose moral. When moral reaches its lower threshold the units will begin to run around frantically. 
