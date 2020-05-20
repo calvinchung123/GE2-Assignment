@@ -20,9 +20,6 @@ public class Boid : MonoBehaviour
     public float maxForce = 10.0f;
     Animator anim;
 
-    public float maxAngle;
-    public float maxRadius;
-    public Transform enemy;
     // Use this for initialization
     void Start()
     {
@@ -92,38 +89,7 @@ public class Boid : MonoBehaviour
 
         return force;
     }
-    public static bool inFOV(Transform checkingObject, Transform target, float maxAngle, float maxRadius)
-    {
-        Collider[] overlaps = new Collider[10];
-        int count = Physics.OverlapSphereNonAlloc(checkingObject.position, maxRadius, overlaps);
 
-        for (int i = 0; i < count + 1; i++)
-        {
-            if (overlaps[i] != null)
-            {
-                if (overlaps[i].transform == target)
-                {
-                    Vector3 directionBetween = (target.position - checkingObject.position).normalized;
-                    directionBetween.y *= 0;
-
-                    float angle = Vector3.Angle(checkingObject.forward, directionBetween);
-
-                    if (angle <= maxAngle)
-                    {
-                        Ray ray = new Ray(checkingObject.position, target.position - checkingObject.position);
-                        RaycastHit hit;
-
-                        if (Physics.Raycast(ray, out hit, maxRadius))
-                        {
-                            if (hit.transform == target)
-                                return true;
-                        }
-                    }
-                }
-            }
-        }
-        return false;
-    }
 
 
     // Update is called once per frame
