@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/groundscene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Landing scene.unity
+    guid: 4a02d2c4cd732184691310c730fcee63
   m_configObjects: {}

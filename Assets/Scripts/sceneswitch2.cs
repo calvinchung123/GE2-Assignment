@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class sceneswitch : MonoBehaviour
+public class sceneswitch2 : MonoBehaviour
 {
     void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
     // Start is called before the first frame update
     void Start()
