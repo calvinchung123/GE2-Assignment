@@ -3,7 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FollowPath : SteeringBehaviour {
+public class FollowPath : SteeringBehaviour
+{
 
     public Path path;
 
@@ -20,7 +21,7 @@ public class FollowPath : SteeringBehaviour {
 
     public void Start()
     {
-        
+
     }
 
     public override Vector3 Calculate()

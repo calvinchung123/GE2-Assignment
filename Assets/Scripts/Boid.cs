@@ -62,7 +62,7 @@ public class Boid : MonoBehaviour
 
         return desired - velocity;
     }
-    
+
 
     Vector3 Calculate()
     {
@@ -86,7 +86,7 @@ public class Boid : MonoBehaviour
                 {
                     force = Vector3.ClampMagnitude(force, maxForce);
                     break;
-                }               
+                }
             }
         }
 
@@ -138,7 +138,7 @@ public class Boid : MonoBehaviour
         velocity += acceleration * Time.deltaTime;
 
         velocity = Vector3.ClampMagnitude(velocity, maxSpeed);
-        
+
         if (velocity.magnitude > float.Epsilon)
         {
             Vector3 tempUp = Vector3.Lerp(transform.up, Vector3.up + (acceleration * banking), Time.deltaTime * 3.0f);
