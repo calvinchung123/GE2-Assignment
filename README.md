@@ -1,9 +1,10 @@
+# Finishingt this read me tomorrow, i will be going home to my pc tomorrow :)
 # GE2-Assignment
 Games engines 2 assignment- recreating a sci-fi scene of choice using steering behaviours
 # Theme
 The theme I chose for this project was a retreival mission for a mecha suit.  
-# StoryLine
-A task force is sent out to find the lost mech on a desserted planet.
+# Description Of Project
+This project has 3 scenes in total. They take place on a futuristic earth. The task force was appointed a mission to find an old mecha suit. The team set course to find it. 
 
 ### Scene 1 - Space Ship Scene
 This scene consists of the space ship approaching the planet. This scene uses the seek and arrive steering behaviours to steer the ship.  
