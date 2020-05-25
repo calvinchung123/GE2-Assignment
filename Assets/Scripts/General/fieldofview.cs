@@ -65,7 +65,8 @@ public class fieldofview : MonoBehaviour
                         if(Physics.Raycast(ray, out hit, maxRadius))
                         {
                             if (hit.transform == target)
-                                return true;
+                                  Debug.Log("Switch to Camera: " + this.gameObject.name);
+                            return true;
                         }
                     }
                 }
